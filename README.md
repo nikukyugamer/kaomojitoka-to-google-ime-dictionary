@@ -26,7 +26,7 @@ $ ruby kaomojitoka_to_google_ime_dictionary.rb
 - please import `./kaomojitoka_to_google_ime_dictionary.sample.txt` to Google IME
 
 ### 4. confirm to convert correctly
-- when Google IME is on, input `かももじとか` and try to convert.
+- when Google IME is on, input `かおもじとか` and try to convert.
 - the conversion candidates of Japanese emoticons are shown
 - Be good communication :)
 
