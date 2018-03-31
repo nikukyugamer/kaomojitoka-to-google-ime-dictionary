@@ -3,7 +3,7 @@ require 'csv'
 require 'open-uri'
 
 class KaomojitokaToGoogleImeDictionary
-  KAOMOJITOKA_URI     = 'http://kaomoji.n-at.me/kaomoji.json'
+  KAOMOJITOKA_URI     = 'http://kaomoji.n-at.me/kaomoji.json'.freeze
   DICTIONARY_YOMIKATA = 'かおもじとか'.freeze
   DICTIONARY_HINSHI   = '顔文字'.freeze
   DICTIONARY_COMMENT  = ''.freeze
