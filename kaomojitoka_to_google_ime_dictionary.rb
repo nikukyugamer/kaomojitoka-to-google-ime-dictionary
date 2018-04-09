@@ -9,19 +9,21 @@ class KaomojitokaToGoogleImeDictionary
   DICTIONARY_COMMENT  = ''.freeze
   OUTPUT_FILENAME     = 'kaomojitoka_to_google_ime_dictionary.txt'.freeze
 
+  attr_reader :kaomojitoka_hash
+
   def initialize
-    kaomojitoka_json    = open(KAOMOJITOKA_URI, &:read)
-    @kaomojitoka_array  = JSON.parse(kaomojitoka_json)
+    kaomojitoka_json  = open(KAOMOJITOKA_URI, &:read)
+    @kaomojitoka_hash = JSON.parse(kaomojitoka_json)
   end
 
   def create_csv
     CSV.open(OUTPUT_FILENAME, 'w', force_quotes: true) do |csv_file|
-      @kaomojitoka_array['records'].each do |record|
+      @kaomojitoka_hash['records'].each do |record|
         csv_file << [DICTIONARY_YOMIKATA, "#{record['text']}", DICTIONARY_HINSHI, DICTIONARY_COMMENT]
       end
     end
   end
 end
 
-obj = KaomojitokaToGoogleImeDictionary.new
-obj.create_csv
+# obj = KaomojitokaToGoogleImeDictionary.new
+# obj.create_csv
