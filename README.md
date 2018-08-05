@@ -44,8 +44,11 @@ $ ruby kaomojitoka_to_google_ime_dictionary.rb
 
 # Note
 - now [`kaomojitoka_to_google_ime_dictionary.rb`](https://github.com/corselia/kaomojitoka-to-google-ime-dictionary/blob/master/kaomojitoka_to_google_ime_dictionary.rb) is uncomplete code because of [this article (Japanese, sorry)](https://obel.hatenablog.jp/entry/20180610/1528593119)
-- so I modify [`kaomojitoka_to_google_ime_dictionary.txt`](https://github.com/corselia/kaomojitoka-to-google-ime-dictionary/blob/master/kaomojitoka_to_google_ime_dictionary.txt) manually
+- so I modify [`kaomojitoka_to_google_ime_dictionary.txt`](https://github.com/corselia/kaomojitoka-to-google-ime-dictionary/blob/master/kaomojitoka_to_google_ime_dictionary.txt) **manually**
 - I wanna modify this bug(?)
+- **Over 300 Bytes word is not registered correctly**
+
+![kaomojitoka_to_google_ime_dictionary_not_registered.png](screenshots/kaomojitoka_to_google_ime_dictionary_not_registered.png)
 
 # LICENSE
 - [MIT LICENSE](LICENSE)
