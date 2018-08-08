@@ -49,6 +49,7 @@ $ ruby kaomojitoka_to_google_ime_dictionary.rb
 - **Over 300 Bytes word is not registered correctly**
 
 ![kaomojitoka_to_google_ime_dictionary_not_registered.png](screenshots/kaomojitoka_to_google_ime_dictionary_not_registered.png)
+- If you wanna add multiple lines characters, should use the clip board tool such as [CLCL](https://www.nakka.com/soft/clcl/)
 
 # LICENSE
 - [MIT LICENSE](LICENSE)
