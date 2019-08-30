@@ -1,5 +1,8 @@
 # Kaomojitoka to Google IME Dictionary
 
+## Google 日本語入力 へのインポート方法
+- 辞書ツール -----> 管理 -----> 新規辞書にインポート
+
 ## What's 'KAOMOJITOKA'?
 - `KAOMOJITOKA` is Japanese emoticons collection
     - the official site is [here](http://kaomoji.n-at.me/)
