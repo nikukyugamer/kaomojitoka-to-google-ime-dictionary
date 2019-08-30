@@ -8,7 +8,7 @@ describe '#initialize' do
     @kaomojitoka_hash = obj.kaomojitoka_hash
   end
 
-  it '@kaomojitoka_hash がハッシュで定義される' do
+  it '@kaomojitoka_hash がハッシュで定義されること' do
     expect(@kaomojitoka_hash.class).to eq Hash
   end
 end
@@ -21,15 +21,15 @@ describe '#create_csv' do
 
     @csv_file_data = []
     @kaomojitoka_hash['records'].each do |record|
-      @csv_file_data << ['DICTIONARY_YOMIKATA', "#{record['text']}", 'DICTIONARY_HINSHI', 'DICTIONARY_COMMENT']
+      @csv_file_data << ['DICTIONARY_YOMIKATA', (record['text']).to_s, 'DICTIONARY_HINSHI', 'DICTIONARY_COMMENT']
     end
   end
 
-  it 'CSVファイルに書き込む「行」の集合は配列で表現される' do
+  it 'CSVファイルに書き込む「行」の集合は配列で表現されること' do
     expect(@csv_file_data.class).to eq Array
   end
 
-  it 'CSVファイルに書き込まれる行数は API の戻り値の要素数と同一である' do
+  it 'CSVファイルに書き込まれる行数は API の戻り値の要素数と同一であること' do
     expect(@kaomojitoka_hash['records'].count).to eq @csv_file_data.count
   end
 end
